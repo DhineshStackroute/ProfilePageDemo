@@ -1,0 +1,32 @@
+<!-- <div>
+    <mat-form-field class="example-full-width">  
+        <mat-label>Favorite food</mat-label>     
+        <input type="text"  placeholder="enter User name">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">   
+        <mat-label>Favorite food</mat-label>       
+        <input type="password" matInput placeholder="enter User password">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+        <button mat-raised-button color="primary">Login</button>
+    </mat-form-field>
+
+</div> -->
+<div>
+    <mat-form-field>
+        <mat-label>UserName</mat-label>
+        <input name="txtUserName" type="text" matInput placeholder="Enetr Username" [(ngModel)]="this.user.username">
+    </mat-form-field>
+    <br>
+    <br>
+    <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input type="password" matInput [(ngModel)]="this.user.password" placeholder="Enetr Password">
+        <br>
+    </mat-form-field>
+    <br>
+    <br>
+    <button mat-raised-button color="primary" (click)="save()">Login</button>
+</div>
